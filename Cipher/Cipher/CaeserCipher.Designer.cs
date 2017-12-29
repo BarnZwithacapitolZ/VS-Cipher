@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CaeserCipher));
             this.tableLayoutPanelTextBoxes = new System.Windows.Forms.TableLayoutPanel();
             this.textBoxInput = new System.Windows.Forms.TextBox();
             this.textBoxOuput = new System.Windows.Forms.TextBox();
@@ -330,6 +331,7 @@
             this.Controls.Add(this.tableLayoutPanelControls);
             this.Controls.Add(this.tableLayoutPanelTextBoxes);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CaeserCipher";
             this.Text = "CaeserCipher";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CaeserCipher_FormClosing);

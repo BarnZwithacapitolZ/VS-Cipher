@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubstitutionCipher));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -370,6 +371,7 @@
             this.Controls.Add(this.tableLayoutPanelControls);
             this.Controls.Add(this.tableLayoutPanelTextBoxes);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SubstitutionCipher";
             this.Text = "Substitution Cipher";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SubstitutionCipher_FormClosing);

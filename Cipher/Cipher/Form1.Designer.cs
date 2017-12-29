@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLoad));
             this.ButtonCaeser = new System.Windows.Forms.Button();
             this.buttonSubstitution = new System.Windows.Forms.Button();
             this.Label1 = new System.Windows.Forms.Label();
@@ -78,6 +79,7 @@
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.buttonSubstitution);
             this.Controls.Add(this.ButtonCaeser);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormLoad";
             this.Text = "Cipher";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLoad_FormClosing);
