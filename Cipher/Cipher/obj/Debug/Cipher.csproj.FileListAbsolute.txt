@@ -52,3 +52,15 @@ C:\Users\barne\Documents\mods\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.Su
 C:\Users\barne\Documents\mods\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.csproj.GenerateResource.Cache
 C:\Users\barne\Documents\mods\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.exe
 C:\Users\barne\Documents\mods\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.pdb
+C:\Users\barne\Documents\github\VS-Cipher\Cipher\Cipher\bin\Debug\Cipher.exe.config
+C:\Users\barne\Documents\github\VS-Cipher\Cipher\Cipher\bin\Debug\Cipher.exe
+C:\Users\barne\Documents\github\VS-Cipher\Cipher\Cipher\bin\Debug\Cipher.pdb
+C:\Users\barne\Documents\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.csprojAssemblyReference.cache
+C:\Users\barne\Documents\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.CaeserCipher.resources
+C:\Users\barne\Documents\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.FormLoad.resources
+C:\Users\barne\Documents\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.Properties.Resources.resources
+C:\Users\barne\Documents\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.SubstitutionCipher.resources
+C:\Users\barne\Documents\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.csproj.GenerateResource.cache
+C:\Users\barne\Documents\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.csproj.CoreCompileInputs.cache
+C:\Users\barne\Documents\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.exe
+C:\Users\barne\Documents\github\VS-Cipher\Cipher\Cipher\obj\Debug\Cipher.pdb
