@@ -139,7 +139,7 @@
             this.tableLayoutPanelTextBoxes.Controls.Add(this.textBoxOuput, 0, 1);
             this.tableLayoutPanelTextBoxes.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanelTextBoxes.Location = new System.Drawing.Point(0, 31);
-            this.tableLayoutPanelTextBoxes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanelTextBoxes.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanelTextBoxes.Name = "tableLayoutPanelTextBoxes";
             this.tableLayoutPanelTextBoxes.RowCount = 2;
             this.tableLayoutPanelTextBoxes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -150,7 +150,7 @@
             // textBoxInput
             // 
             this.textBoxInput.Location = new System.Drawing.Point(4, 4);
-            this.textBoxInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxInput.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxInput.Multiline = true;
             this.textBoxInput.Name = "textBoxInput";
             this.textBoxInput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -161,7 +161,7 @@
             // textBoxOuput
             // 
             this.textBoxOuput.Location = new System.Drawing.Point(4, 272);
-            this.textBoxOuput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxOuput.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxOuput.Multiline = true;
             this.textBoxOuput.Name = "textBoxOuput";
             this.textBoxOuput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -188,7 +188,7 @@
             this.tableLayoutPanelControls.Controls.Add(this.buttonSubmit, 1, 2);
             this.tableLayoutPanelControls.Dock = System.Windows.Forms.DockStyle.Right;
             this.tableLayoutPanelControls.Location = new System.Drawing.Point(537, 31);
-            this.tableLayoutPanelControls.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanelControls.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanelControls.Name = "tableLayoutPanelControls";
             this.tableLayoutPanelControls.RowCount = 8;
             this.tableLayoutPanelControls.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
@@ -221,7 +221,7 @@
             this.TextBoxNewValue.BackColor = System.Drawing.Color.Silver;
             this.TextBoxNewValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TextBoxNewValue.Location = new System.Drawing.Point(143, 37);
-            this.TextBoxNewValue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBoxNewValue.Margin = new System.Windows.Forms.Padding(4);
             this.TextBoxNewValue.Multiline = true;
             this.TextBoxNewValue.Name = "TextBoxNewValue";
             this.TextBoxNewValue.Size = new System.Drawing.Size(159, 23);
@@ -274,10 +274,10 @@
             "Y",
             "Z"});
             this.comboBoxChangeValue.Location = new System.Drawing.Point(5, 37);
-            this.comboBoxChangeValue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxChangeValue.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxChangeValue.Name = "comboBoxChangeValue";
             this.comboBoxChangeValue.Size = new System.Drawing.Size(127, 24);
-            this.comboBoxChangeValue.TabIndex = 25;
+            this.comboBoxChangeValue.TabIndex = 26;
             this.comboBoxChangeValue.SelectedIndexChanged += new System.EventHandler(this.comboBoxChangeValue_SelectedIndexChanged);
             // 
             // buttonSwitch
@@ -286,7 +286,7 @@
             this.buttonSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSwitch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSwitch.Location = new System.Drawing.Point(5, 197);
-            this.buttonSwitch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSwitch.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSwitch.Name = "buttonSwitch";
             this.buttonSwitch.Size = new System.Drawing.Size(125, 23);
             this.buttonSwitch.TabIndex = 23;
@@ -304,7 +304,7 @@
             "Input",
             "Output"});
             this.comboBoxInputOutput.Location = new System.Drawing.Point(5, 165);
-            this.comboBoxInputOutput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxInputOutput.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxInputOutput.Name = "comboBoxInputOutput";
             this.comboBoxInputOutput.Size = new System.Drawing.Size(127, 24);
             this.comboBoxInputOutput.TabIndex = 19;
@@ -315,7 +315,7 @@
             this.buttonClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClear.Location = new System.Drawing.Point(143, 165);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonClear.Margin = new System.Windows.Forms.Padding(4);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(125, 23);
             this.buttonClear.TabIndex = 20;
@@ -329,7 +329,7 @@
             this.ButtonConvert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ButtonConvert.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonConvert.Location = new System.Drawing.Point(143, 133);
-            this.ButtonConvert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonConvert.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonConvert.Name = "ButtonConvert";
             this.ButtonConvert.Size = new System.Drawing.Size(125, 23);
             this.ButtonConvert.TabIndex = 18;
@@ -346,7 +346,7 @@
             "Decrypt",
             "Encrypt"});
             this.comboBoxCipher.Location = new System.Drawing.Point(143, 101);
-            this.comboBoxCipher.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxCipher.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxCipher.Name = "comboBoxCipher";
             this.comboBoxCipher.Size = new System.Drawing.Size(159, 24);
             this.comboBoxCipher.TabIndex = 13;
@@ -371,7 +371,7 @@
             this.buttonSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSubmit.Location = new System.Drawing.Point(143, 69);
-            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(125, 23);
             this.buttonSubmit.TabIndex = 26;
@@ -389,7 +389,7 @@
             this.Controls.Add(this.tableLayoutPanelTextBoxes);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SubstitutionCipher";
             this.Text = "Substitution Cipher";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SubstitutionCipher_FormClosing);

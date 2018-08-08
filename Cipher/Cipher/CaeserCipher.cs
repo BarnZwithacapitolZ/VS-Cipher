@@ -81,7 +81,7 @@ namespace Cipher
 
             if (comboBoxCipher.SelectedIndex == 1)
             {             
-                plainText = plainText.ToLower();
+                //plainText = plainText.ToLower();
                 foreach (char letter in plainText)
                 {
                     asciiValue = (char)letter;
@@ -105,7 +105,7 @@ namespace Cipher
             }
             else
             {
-                plainText = plainText.ToLower();
+                //plainText = plainText.ToLower();
                 foreach (char letter in plainText)
                 {
                     asciiValue = (char)letter;

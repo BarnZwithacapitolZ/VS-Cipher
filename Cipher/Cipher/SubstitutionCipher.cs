@@ -22,7 +22,7 @@ namespace Cipher
         private string[,] originalValues = new string[26, 2] { { "A", "Y" }, { "B", "Z" }, { "C", "W" }, { "D", "X" }, { "E", "U" },
         { "F", "V" }, { "G", "S" }, { "H", "T" }, { "I", "Q" }, { "J", "R" }, { "K", "O" }, { "L", "P" }, { "M", "M" }, { "N", "N" },
         { "O", "K" }, { "P", "L" }, { "Q", "I" }, { "R", "J" }, { "S", "G" }, { "T", "H" }, { "U", "E" }, { "V", "F" }, { "W", "C" },
-        { "X", "D" }, { "Y", "A" }, { "Z", "B" } }; // Each letter and their relative replacement
+        { "X", "D" }, { "Y", "A" }, { "Z", "B" }}; // Each letter and their relative replacement
 
         private void loadFile(string text, TextBox location)
         {
@@ -60,7 +60,7 @@ namespace Cipher
 
             foreach (char letter in plainText)
             {
-                for (int x = 0; x < 26; x++)
+                for (int x = 0; x < originalValues.Length / 2; x++)
                 {
                     if (originalValues[x, first] == letter.ToString().ToUpper())
                     {
@@ -90,8 +90,8 @@ namespace Cipher
         }
 
         private void comboBoxChangeValue_SelectedIndexChanged(object sender, EventArgs e)
-        {          
-            for (int x = 0; x < 26; x++)
+        {
+            for (int x = 0; x < originalValues.Length / 2; x++)
             {
                 if (comboBoxChangeValue.Text.Equals(comboBoxChangeValue.Items[x])) 
                 {                 
@@ -102,7 +102,7 @@ namespace Cipher
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-            for (int x = 0; x < 26; x++) // For every character
+            for (int x = 0; x < originalValues.Length / 2; x++) // For every character
             {
                 if (TextBoxNewValue.Text is string && TextBoxNewValue.Text.Length <= 1)
                 {
