@@ -58,6 +58,51 @@ namespace Cipher
             }
         }
 
+
+        private int encrypt(char character, int key, int minAscii, int maxAscii)
+        {
+            int value = (char)character;
+            int newValue = 0;
+            if (value > minAscii - 1 && value < maxAscii + 1)
+            {
+                newValue = value + key;
+                do // For if new value goes past maxAscii
+                {
+                    if (newValue > maxAscii)
+                    {
+                        newValue -= 26;
+                    } 
+                } while (newValue > maxAscii);
+            }
+            else
+            {
+                newValue = value;
+            }
+            return newValue;
+        }
+
+        private int decrypt(char character, int key, int minAscii, int maxAscii)
+        {
+            int value = (char)character;
+            int newValue = 0;
+            if (value > minAscii - 1 && value < maxAscii + 1)
+            {
+                newValue = value - key;
+                do
+                    if (newValue < minAscii)
+                    {
+                        newValue += 26;
+                    }
+                while (newValue < minAscii);
+            }
+            else
+            {
+                newValue = value;
+            }
+            return newValue;
+        }
+
+
         private void ButtonConvert_Click(object sender, EventArgs e)
         {
             string plainText = textBoxInput.Text;
@@ -81,49 +126,31 @@ namespace Cipher
 
             if (comboBoxCipher.SelectedIndex == 1)
             {             
-                //plainText = plainText.ToLower();
                 foreach (char letter in plainText)
                 {
-                    asciiValue = (char)letter;
-                    if (asciiValue > 96 && asciiValue < 123)
+                    if (char.IsUpper(letter))
                     {
-                        newAsciiValue = asciiValue + shiftKey;
-                        do
-                            if (newAsciiValue > 122)
-                            {
-                                newAsciiValue = newAsciiValue - 26;
-                            }
-                        while (newAsciiValue > 122);      
+                        cipherText = cipherText + char.ConvertFromUtf32(encrypt(letter, shiftKey, 65, 90));
                     }
                     else
                     {
-                        newAsciiValue = asciiValue;
+                        cipherText = cipherText + char.ConvertFromUtf32(encrypt(letter, shiftKey, 97, 122));
                     }
-                    cipherText = cipherText + char.ConvertFromUtf32(newAsciiValue);
                 }
                 textBoxOuput.Text = cipherText;
             }
             else
             {
-                //plainText = plainText.ToLower();
                 foreach (char letter in plainText)
                 {
-                    asciiValue = (char)letter;
-                    if (asciiValue > 96 && asciiValue < 123)
+                    if (char.IsUpper(letter))
                     {
-                        newAsciiValue = asciiValue - shiftKey;
-                        do
-                            if (newAsciiValue <= 96)
-                            {
-                                newAsciiValue = newAsciiValue + 26;
-                            }
-                        while (newAsciiValue <= 96);
+                        cipherText = cipherText + char.ConvertFromUtf32(decrypt(letter, shiftKey, 65, 90));
                     }
                     else
                     {
-                        newAsciiValue = asciiValue;
+                        cipherText = cipherText + char.ConvertFromUtf32(decrypt(letter, shiftKey, 97, 122));
                     }
-                    cipherText = cipherText + char.ConvertFromUtf32(newAsciiValue);
                 }
                 textBoxOuput.Text = cipherText;
             }
